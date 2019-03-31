@@ -14,6 +14,21 @@ Bumla is:
  * Modern (built with Flexbox)
  * Free (open source on Github)
 
+## Create a new Bulma-based Project
+
+```
+git clone https://github.com/jgthms/bulma-start
+bulma-start my-bulma-project
+cd my-bulma-project
+rm -rf my-bulma-project/.git
+```
+
+```
+cd my-bulma-project
+npm install
+npm start
+```
+
 ## Online Resources
 
  * [Github Repository](https://github.com/jgthms/bulma)
