@@ -29,6 +29,14 @@ npm install
 npm start
 ```
 
+## Running a WebServer while testing/developing
+
+There are a number of out-of-the-box solutions to run a web server with a one liner:
+
+* Python: `python3 -m http.server 8000`
+* Node: `http-server -p 8000`
+* Ruby: `ruby -run -ehttpd . -p 8000`
+
 ## Online Resources
 
  * [Github Repository](https://github.com/jgthms/bulma)
