@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>blog.lexruee.ch</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+        <!-- <link rel="stylesheet" href="debug.css"> -->
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    </head>
+    <body>
+        <section class="hero is-fullheight is-bold">
+            <div class="hero-head">
+                <!-- start navigation -->
+                <nav class="navbar" role="navigation" aria-label="main navigation">
+                    <div class="container">
+                        <div class="navbar-brand">
+                            <a class="navbar-item">
+                                <span class="icon">
+                                    <i class="fas fa-2x fab fa-linux"></i>
+                                </span>
+                            </a>
+                            <a class="navbar-item">
+                                <div class="is-size-5">blog.lexruee.ch</div>
+                            </a>
+                            <a role="button" class="navbar-burger burger" data-target="navMenu" 
+                                aria-label="menu" aria-expanded="false">
+                                <span aria-hidden="true"></span>
+                                <span aria-hidden="true"></span>
+                                <span aria-hidden="true"></span>
+                            </a>
+                        </div>
+                        <div id="navMenu" class="navbar-menu">
+                            <div class="navbar-end">
+                                <div class="tabs is-right">
+                                    <ul>
+                                        <li class="is-active"><a>Home</a><li>
+                                        <li><a>Blog</a><li>
+                                        <li><a>Projects</a><li>
+                                        <li><a>About me</a><li>
+                                        <li><a>Wiki</a><li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <!-- end navigation -->
+            </div>
+            <div class="hero-body">
+                <!-- start content -->
+                <div class="container">
+                    <div class="columns is-vcentered">
+                        <div class="column is-5 is-offset-1">
+                            <h1 class="title is-2">
+                                Hi, I'm Alex.
+                            </h1>
+                            <h2 class="subtitle is-4">
+                                A passionate software developer, tinkerer, RPi 
+                                and GNU/Linux enthusiast.
+                            </h2>
+                        </div>
+                        <div class="column is-5">
+                            <div class="box has-background-light is-bold">
+                                <figure class="image is-4by3">
+                                    <img src="https://picsum.photos/800/600/?random" alt="Description">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end content -->
+            </div>
+            <div class="hero-footer has-text-centered">
+                <div class="is-size-6 has-text-grey-lighter">
+                    © Alexander Rüedlinger, 2017-2019
+                </div>
+            </div>
+        </section>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                // Get all "navbar-burger" elements
+                const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+                // Check if there are any navbar burgers
+                if ($navbarBurgers.length > 0) {
+                    // Add a click event on each of them
+                    $navbarBurgers.forEach( el => {
+                        el.addEventListener('click', () => {
+                            // Get the target from the "data-target" attribute
+                            const target = el.dataset.target;
+                            const $target = document.getElementById(target);
+
+                            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                            el.classList.toggle('is-active');
+                            $target.classList.toggle('is-active');
+                        });
+                    });
+                  }
+                });
+        </script>
+    </body>
+</html>
