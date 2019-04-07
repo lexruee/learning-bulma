@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Todo · Phoenix Framework with Bulma!</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    </head>
+    <body>
+        <header class="columns">
+            <div class="column is-6 is-offset-3">
+                <nav class="navbar" role="navigation" aria-label="main navigation">
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="https://bulma.io">
+                            <img src="https://bulma.io/images/bulma-logo.png" 
+                                width="112" height="28">
+                        </a>
+                        <a role="button" class="navbar-burger burger" data-target="navMenu" 
+                            aria-label="menu" aria-expanded="false">
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                        </a>
+                    </div>
+                    <div id="navMenu" class="navbar-menu">
+                        <div class="navbar-end">
+                            <a class="navbar-item"> Overview </a>
+                            <a class="navbar-item"> Tasks </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main class="columns">
+            <div class="column is-6 is-offset-3">
+                <h1 class="title"> Hello World!</h1>
+                <p class="subtitle">
+                    My first Website with Bulma!
+                </p>
+            </div>
+        </main>
+        <footer class="has-text-centered">
+            <div class="is-size-7 has-text-grey">
+                Todo app!
+            </div>
+        </footer>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                // Get all "navbar-burger" elements
+                const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+                // Check if there are any navbar burgers
+                if ($navbarBurgers.length > 0) {
+                    // Add a click event on each of them
+                    $navbarBurgers.forEach( el => {
+                        el.addEventListener('click', () => {
+                            // Get the target from the "data-target" attribute
+                            const target = el.dataset.target;
+                            const $target = document.getElementById(target);
+
+                            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                            el.classList.toggle('is-active');
+                            $target.classList.toggle('is-active');
+                        });
+                    });
+                  }
+                });
+        </script>
+    </body>
+</html>
