@@ -9,7 +9,7 @@
         <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     </head>
     <body>
-        <section class="hero is-fullheight">
+        <section class="hero is-fullheight is-bold">
             <div class="hero-head">
                 <!-- start navigation -->
                 <nav class="navbar" role="navigation" aria-label="main navigation">
@@ -21,7 +21,7 @@
                                 </span>
                             </a>
                             <a class="navbar-item">
-                                blog.lexruee.ch
+                                <div class="is-size-5">blog.lexruee.ch</div>
                             </a>
                             <a role="button" class="navbar-burger burger" data-target="navMenu" 
                                 aria-label="menu" aria-expanded="false">
@@ -51,7 +51,7 @@
                 <!-- start content -->
                 <div class="container">
                     <div class="columns is-vcentered">
-                        <div class="column is-half">
+                        <div class="column is-5 is-offset-1">
                             <h1 class="title is-2">
                                 Hi, I'm Alex.
                             </h1>
@@ -60,8 +60,8 @@
                                 and GNU/Linux enthusiast.
                             </h2>
                         </div>
-                        <div class="column is-half">
-                            <div class="box">
+                        <div class="column is-5">
+                            <div class="box has-background-light is-bold">
                                 <figure class="image is-4by3">
                                     <img src="https://picsum.photos/800/600/?random" alt="Description">
                                 </figure>
@@ -71,8 +71,11 @@
                 </div>
                 <!-- end content -->
             </div>
-            <div class="hero-footer has-text-centered">
-                © Alexander Rüedlinger, 2017-2019
+            <div class="hero-footer">
+                <div class="is-size-7 has-text-grey">
+                    <p>© Alexander Rüedlinger, 2017-2019</p>
+                    <p>Proudly powered by Pelican, which takes great advantage of Python.</p>
+                </div>
             </div>
         </section>
         <script>
